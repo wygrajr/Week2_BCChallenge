@@ -2,7 +2,7 @@
     --fontFam: "Times New Roman", Times, serif;
     --gold: #ffdf00;
     --grey:  #708090;
-  }
+}
 
 * {
     box-sizing: border-box;
@@ -47,7 +47,6 @@ header nav ul li {
 main {
     display: flex;
     flex-direction: column;
-
 }
 
 img{
@@ -63,8 +62,15 @@ img{
     flex: 60%;
 }
 
+#newestProject{
+    display: block;
+    height: 100px;
+}
+
+
 .workBox {
     display: inline;
+    height: 50px;
 }
 
 .contact{
@@ -79,3 +85,9 @@ img{
     display: inline-block;
     margin-left: 25px;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+  }
