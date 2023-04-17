@@ -1,11 +1,81 @@
-.content {
-    display: flex;
+:root {
+    --fontFam: "Times New Roman", Times, serif;
+    --gold: #ffdf00;
+    --grey:  #708090;
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-#newestProject {
-    
+body {
+    background-color: var(--grey);
+    color: var(--gold);
+}
+
+header {
+    padding: 20px;
+    font-family: var(--fontFam);
+    background-color: var(--gold);
+    color: var(--grey);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--fontFam);
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+img{
+    height: 25%;
+    width: 25%;
+}
+
+.aboutMe {
+    flex: 20%;
+}
+
+.work{
+    flex: 60%;
 }
 
 .workBox {
+    display: inline;
+}
 
+.contact{
+    flex: 20%;
+}
+
+.contact ul{
+    list-style-type: none;
+}
+
+.content ul li {
+    display: inline-block;
+    margin-left: 25px;
 }
